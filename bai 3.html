@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function giaiThua(n) {
+        if (n === 0) { return 1; }
+        return n * giaiThua(n-1);
+    }
+    let inter = parseInt(prompt("nhập"));
+    alert(giaiThua(inter));
+</script>
+</body>
+</html>

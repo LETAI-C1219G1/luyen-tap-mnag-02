@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Array = prompt("Import length of array: ");
+    function search() {
+        if (Array == parseInt(Array) && Array > 0) {
+            let array = [];
+            let dem = 0;
+            for (let i = 0; i < Array; i++) {
+                array.push(prompt("Input element: "));
+            }
+            let char = prompt("Input char: ");
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] === char) {
+                    dem++;
+                }
+            }
+            if(dem !== 0){
+                document.write("Character " + char + " appears " + dem + " times.");
+            }else{
+                document.write("Character " + char + " not found");
+                return -1;
+            }
+        }else {
+            alert("Please input a number is bigger than 0.");
+        }
+    }
+    search();
+</script>
+</body>
+</html>
